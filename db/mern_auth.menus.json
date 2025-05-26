@@ -1,0 +1,51 @@
+[{
+  "_id": {
+    "$oid": "68052564382be0839d3f328f"
+  },
+  "name": "Salad",
+  "description": "Fresh romaine lettuce with Caesar dressing, croutons, and parmesan.",
+  "price": 6.49,
+  "category": "Appetizer",
+  "available": true
+},
+{
+  "_id": {
+    "$oid": "68052564382be0839d3f3290"
+  },
+  "name": "Pasta",
+  "description": "Pasta in a creamy sauce with pancetta and parmesan.",
+  "price": 11.5,
+  "category": "Main Course",
+  "available": true
+},
+{
+  "_id": {
+    "$oid": "68052564382be0839d3f3291"
+  },
+  "name": "French Fries",
+  "description": "Crispy golden fries served with ketchup.",
+  "price": 3.25,
+  "category": "Side",
+  "available": true
+},
+{
+  "_id": {
+    "$oid": "68052564382be0839d3f3292"
+  },
+  "name": "Cake",
+  "description": "Warm chocolate cake with a gooey molten center.",
+  "price": 5.75,
+  "category": "Dessert",
+  "available": false
+},
+{
+  "_id": {
+    "$oid": "6818ecdbfa6b0a39a99dee29"
+  },
+  "__v": 0,
+  "available": false,
+  "category": "Ipsa consequatur U",
+  "description": "Quis qui cupiditate ",
+  "name": "Burger",
+  "price": 140
+}]

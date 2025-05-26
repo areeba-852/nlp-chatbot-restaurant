@@ -1,0 +1,72 @@
+[{
+  "_id": {
+    "$oid": "67e3dcd9e4b3db507b278bd6"
+  },
+  "email": "test1@gmail.com",
+  "username": "test",
+  "password": "$2b$12$.LZw8TX6SEmsugxrT3ghG.Ljf9..oxzn8s1fG9s9xglcY0vxPfr5q",
+  "createdAt": {
+    "$date": "2025-03-26T10:54:03.648Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67e3e0fee4b3db507b278bd8"
+  },
+  "email": "teacher2@gmail.com",
+  "username": "student2",
+  "password": "$2b$12$WGD167v4RAWtOAcTzGzhXuheDUDAHQy4tqLQLUG2dE3rTr/f.Z.6O",
+  "createdAt": {
+    "$date": "2025-03-26T10:54:03.648Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67f3aa1e5459d7b761f63ac7"
+  },
+  "email": "bikazegifo@mailinator.com",
+  "username": "quceda",
+  "password": "$2b$12$aTVhg48/BMFzzMY8QoJab.jKw/r0rmSJ/GC7fLmyuFaIQR9/37d2a",
+  "createdAt": {
+    "$date": "2025-04-07T10:33:53.369Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67f3aa623a4687678fce3443"
+  },
+  "email": "zuvo@mailinator.com",
+  "username": "xovyso",
+  "password": "$2b$12$P9qULjPNfM5sEEX6VqRzEuvWxsfmSMLKOn.dRHCxIGP0ypRgbNetu",
+  "createdAt": {
+    "$date": "2025-04-07T10:34:52.172Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "680e63bb123ab8473dc0da70"
+  },
+  "email": "fazi@mailinator.com",
+  "username": "zainab",
+  "password": "$2b$12$iKDlUTWZMBTlRGD5jFKZtePMRlyoIj8v8DZcOY1PH2thBnNpjsT5S",
+  "createdAt": {
+    "$date": "2025-04-27T17:04:43.825Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6814895605be9dfbf89438c6"
+  },
+  "email": "damomyra@mailinator.com",
+  "username": "areeba",
+  "password": "$2b$12$XXxa9d3H68w7svvCfdOXhuwLfm6Jh1qKgkCloHK0pS9h4WI4lKNNO",
+  "createdAt": {
+    "$date": "2025-05-02T08:50:15.936Z"
+  },
+  "__v": 0
+}]
