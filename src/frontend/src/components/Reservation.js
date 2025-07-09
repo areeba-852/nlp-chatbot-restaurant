@@ -42,6 +42,7 @@ const TableReservations = () => {
     setEditMode(true);
     setEditingId(reservation._id);
     setFormData({
+      _id: reservation._id,
       memberNumber: reservation.memberNumber,
       date: reservation.date,
       time: reservation.time
@@ -67,7 +68,7 @@ const TableReservations = () => {
     e.preventDefault();
     try {
       if (editMode) {
-        await axios.put(`http://localhost:5000/reservation/${editingId}`, formData);
+        await axios.post(`http://localhost:5000/reservation`, formData);
       } else {
         await axios.post('http://localhost:5000/reservation', formData);
       }

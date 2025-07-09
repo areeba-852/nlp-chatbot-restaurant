@@ -14,7 +14,8 @@ function App() {
   const { isAuthenticated, isLoading } = useAuth();
   const navigate = useNavigate();
   const location = useLocation(); 
-
+console.log('isAuthenticated', isAuthenticated)
+console.log('isLoading', isLoading)
   useEffect(() => {
     if (!isLoading && !isAuthenticated && location.pathname !== '/' && location.pathname !== '/signup') {
       navigate('/login');
@@ -42,13 +43,14 @@ export const useAuth = () => {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
   const [isLoading, setIsLoading] = useState(true); // Track loading state
   const navigate = useNavigate();
+  console.log('navigate', navigate)
   useEffect(() => {
     // Use Axios to verify the token via API
     axios.get("http://localhost:5000/verify", {
       withCredentials: true, // Ensure credentials (cookies) are sent
     })
     .then((res) => {
-      console.log('res', res)
+      console.log('res.....', res)
       if (res.data.user) {
         localStorage.setItem('username', (res.data.user.username));
         setIsAuthenticated(true);

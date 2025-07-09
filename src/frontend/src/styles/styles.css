@@ -40,7 +40,7 @@ body {
   .chat-bubble-container {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 30px;
     max-width: 75%;
   }
   .chat-bubble-container.bot {

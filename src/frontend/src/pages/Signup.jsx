@@ -10,6 +10,7 @@ const Signup = () => {
     password: "",
     username: "",
   });
+  console.log('inputValue', inputValue)
   const { email, password, username } = inputValue;
   const handleOnChange = (e) => {
     const { name, value } = e.target;
@@ -19,10 +20,10 @@ const Signup = () => {
     });
   };
 
-  const handleError = (err) =>
-    toast.error(err, {
-      position: "bottom-left",
-    });
+  // const handleError = (err) =>
+  //   toast.error(err, {
+  //     position: "bottom-left",
+  //   });
   const handleSuccess = (msg) =>
     toast.success(msg, {
       position: "bottom-right",
@@ -38,6 +39,7 @@ const Signup = () => {
         },
         { withCredentials: true }
       ).then(response => {
+        console.log('response.message', response)
         handleSuccess(response.message);
         setTimeout(() => {
           navigate("/home");

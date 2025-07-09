@@ -1,4 +1,6 @@
-import React, { useEffect, useState } from "react";
+import React, { 
+  // useEffect,
+   useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
 import { ToastContainer, toast } from "react-toastify";
@@ -10,18 +12,18 @@ const Login = () => {
     password: "",
   });
   const { email, password } = inputValue;
-  useEffect(() => {
-    // Optional: hit a /verify route to check session from cookie
-    axios.get("http://localhost:5000/verify", {
-      withCredentials: true,
-    })
-      .then((res) => {
-        if (res.data.user) {
-          navigate("/home");
-        }
-      })
-      .catch(() => {});
-  }, [navigate]);
+  // useEffect(() => {
+  //   // Optional: hit a /verify route to check session from cookie
+  //   axios.get("http://localhost:5000/verify", {
+  //     withCredentials: true,
+  //   })
+  //     .then((res) => {
+  //       if (res.data.user) {
+  //         navigate("/home");
+  //       }
+  //     })
+  //     .catch(() => {});
+  // }, [navigate]);
   const handleOnChange = (e) => {
     const { name, value } = e.target;
     setInputValue({

@@ -15,7 +15,7 @@ const Layout = () => {
   const handleMenuClick = (menu) => {
     setSelectedMenu(menu);
   };
-const username = localStorage.getItem("username");
+  const username = localStorage.getItem("username");
 const handleSignOut = () => {
   axios.get("http://localhost:5000/logout", {
     withCredentials: true, // Ensure credentials (cookies) are sent
@@ -28,7 +28,7 @@ const handleSignOut = () => {
   })
 };
   return (
-    <div className="d-flex flex-column vh-100">
+    <div className="d-flex flex-column vh-100 vw-100">
       {/* Header */}
       <header className="bg-primary text-white p-3 d-flex justify-content-between align-items-center">
         <h4 className="m-0">Arnab Restaurant</h4>

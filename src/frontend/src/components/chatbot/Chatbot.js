@@ -31,6 +31,7 @@ class Chatbot extends Component {
 
   async df_text_query(text) {
     console.log('text', text)
+    console.log('secons')
     let says = {
       speaks: "me",
       msg: {
@@ -43,6 +44,7 @@ class Chatbot extends Component {
         text,
         userID: cookies.get("userID")
       });
+      console.log('res', res)
       const newMessages = res.data.fulfillmentMessages.map(msg => ({
         speaks: "bot",
         msg: msg
@@ -88,6 +90,7 @@ class Chatbot extends Component {
   }
 
   handleQuickReplyPayload(event, text) {
+    console.log('first')
     event.preventDefault();
     event.stopPropagation();
     this.df_text_query(text);
@@ -98,6 +101,7 @@ class Chatbot extends Component {
   }
 
   renderOneMessage(message, i) {
+    console.log('message', message)
     if (message.msg?.text?.text) {
       return (
         <Message key={i} speaks={message.speaks} text={message.msg.text.text} />
@@ -139,7 +143,8 @@ class Chatbot extends Component {
 
   render() {
     const { showBot, messages } = this.state;
-console.log('messages+++++', messages)
+    console.log('messages+++++', messages)
+    console.log('showBot', showBot)
     return (
       <div
         className="card"

@@ -11,9 +11,12 @@ const Orders = () => {
     totalAmount: 0,
     status: "pending",
   });
+  console.log('orders', orders)
+  console.log('newOrder', newOrder)
   const [editMode, setEditMode] = useState(false);
   const [editingOrderId, setEditingOrderId] = useState(null);
 
+  console.log('editingOrderId', editingOrderId)
   useEffect(() => {
     fetchOrders();
   }, []);
@@ -32,7 +35,7 @@ console.log('orders', orders)
   const handleSaveClick = async () => {
     try {
       if (editMode) {
-        await axios.put(`http://localhost:5000/order/${editingOrderId}`, newOrder);
+        await axios.post(`http://localhost:5000/order`, newOrder);
       } else {
         await axios.post('http://localhost:5000/order', newOrder);
       }
@@ -94,21 +97,21 @@ console.log('orders', orders)
     }));
   };
 
-  const handleFormSubmit = async (e) => {
-    e.preventDefault();
+  // const handleFormSubmit = async (e) => {
+  //   e.preventDefault();
 
-    try {
-      if (editMode) {
-        await axios.put(`http://localhost:5000/api/orders/${editingOrderId}`, newOrder);
-      } else {
-        await axios.post('http://localhost:5000/api/orders', newOrder);
-      }
-      fetchOrders();
-      setShowForm(false);
-    } catch (error) {
-      console.error('Error saving order:', error);
-    }
-  };
+  //   try {
+  //     if (editMode) {
+  //       await axios.put(`http://localhost:5000/api/orders/${editingOrderId}`, newOrder);
+  //     } else {
+  //       await axios.post('http://localhost:5000/api/orders', newOrder);
+  //     }
+  //     fetchOrders();
+  //     setShowForm(false);
+  //   } catch (error) {
+  //     console.error('Error saving order:', error);
+  //   }
+  // };
 
   const handleCancel = () => {
     setShowForm(false);

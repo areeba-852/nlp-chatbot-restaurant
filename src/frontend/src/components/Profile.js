@@ -52,7 +52,7 @@ const Profile = () => {
         });
         // Optionally, redirect user to another page after success
         setTimeout(() => {
-          navigate("/profile"); // or "/home"
+          navigate("/home"); // or "/home"
         }, 1000);
       } else {
         toast.error(message, {
